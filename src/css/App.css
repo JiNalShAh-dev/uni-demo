@@ -1,0 +1,284 @@
+ul{
+    list-style-type: none;
+  }
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-family: "DM Mono", monospace;
+  }
+
+.filters{
+    display: flex;
+    padding: 3rem;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    flex-direction: column;
+    position:sticky;
+    top: 0px;
+  }
+
+  .app-container{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+  }
+.filter{
+    height: 150px;
+    width: 300px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background:gray;
+    display: flex;
+    transition: .2s;
+    margin: 0;
+    position: relative;
+    overflow: scroll;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+.courseCard {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0rem 0 1rem #000;
+  width: 600px;
+  height: 200px;
+  margin-left: 5rem;
+  margin-bottom: 3rem;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  margin-left: 11rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.details {
+  padding-left: 1rem;
+}
+
+h2{
+
+  display: block;
+  font-size: 1.0em;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.appliedFilters{
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  box-shadow: 0rem 0 0.3rem #000;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 50px;
+}
+
+.selectedFilters{
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: row;
+  padding: 0rem;
+  box-shadow: 0rem 0 0.3rem #000;
+  justify-content: center;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+.app-header img {
+  width : 200px;
+  height : 200px;
+}
+
+.app-header h1 {
+    display: block;
+    font-size: 6rem;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.container-app-filters {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-left: 50rem;
+  width: 50%;
+  padding: 10px;
+  margin-top: 10rem;
+}
+
+.heading {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.btn {
+	border: none;
+	font-family: 'monospace';
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+	font-family: 'FontAwesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep {
+	padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+	background: rgba(0,0,0,0.15);
+}
+
+/* Button 1 */
+.btn-1 {
+	background: #3498db;
+	color: #fff;
+}
+
+.btn-1:hover {
+	background: #2980b9;
+}
+
+.btn-1:active {
+	background: #2980b9;
+	top: 2px;
+}
+
+.btn-1:before {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	line-height: 3;
+	font-size: 140%;
+	width: 60px;
+}
+.app-name {
+  font-size: 5rem;
+  margin-top: 3rem;
+}
+
+.suggestionBox {
+  height: 350px;
+  width: 1820px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background:gray;
+  display: flex;
+  transition: .2s;
+  margin: 0;
+  position: relative;
+  overflow-x: scroll;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  flex-direction: row;
+}
+
+.main-content{
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+}
+
+.suggCourseCard {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0rem 0 1rem #000;
+  width: 600px;
+  height: 300px;
+  margin-left: 5rem;
+  margin-bottom: 3rem;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  margin-left: 11rem;
+}
+
+.suggestionContent {
+  display: flex;
+  flex-direction: column;
+}
+.uni-name{
+  font-size: 1.8rem;
+}
+.detail-field {
+  display: flex;
+  flex-direction: row;
+}
+.label{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.value{
+  margin-left: 1.4rem;
+}
+.suggestion-label{
+  font-size: 4rem;
+  color: rgb(128 20 35);
+  font-weight: bold;
+  font-variant-caps: all-petite-caps;
+}
